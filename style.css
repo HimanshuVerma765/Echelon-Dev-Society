@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: linear-gradient(#ECEFFE,#CED6FB); */
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fafafa;
+    border-radius: 5px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3d5ff6;
+    border-radius: 5px;
+}
+
+
+
+.nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    border-bottom: 2px solid #dadada;
+}
+
+.nav img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+
+.nav h4 {
+    font-size: 1.2vw;
+}
+
+.nav i {
+    font-size: 2em;
+    display: none;
+    font-weight: 575;
+}
+
+.nav button {
+    font-size: 1.2vw;
+    padding: 0.7vw 1.4vw;
+    background-color: #3E60F8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+.content {
+    height: calc(100% - 80px);
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    position: relative;
+}
+
+
+.left {
+    height: 100%;
+    width: 55%;
+    /* background-color: crimson; */
+    padding: 5vw 5vw;
+}
+
+.left h1 {
+    font-size: 3.8vmax;
+    line-height: 4.4vw;
+}
+
+.left h1 span {
+    color: #3E60F8;
+}
+
+.left p {
+    font-size: 1.2vmax;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.right {
+    height: 100%;
+    width: 45%;
+    /* background-color: royalblue; */
+}
+
+.content button {
+    font-size: 1.5vw;
+    padding: 1.3vw 2.3vw;
+    background-color: #3E60F8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.aboutUs {
+    height: 100%;
+    width: 100%;
+    /* background-color: lightseagreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUS-part1 {
+    height: 100%;
+    width: 55%;
+}
+
+.aboutUS-part1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutUS-part2 {
+    height: 100%;
+    width: 45%;
+    padding: 5vw;
+}
+
+.aboutUS-part2 h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+
+.aboutUS-part2 p {
+    font-size: 1.2vmax;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+
+}
+
+
+.card-wrapper{
+    width: 100%;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover{
+border-color: #5372f0;
+}
+
+.card-list .card-link .card-image{
+width: 100%;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: #5372f0;
+    margin: 16px 0 18px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: #DDE4FF;
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.chair{
+    color: #B22485;
+    background: #F7DFF5;
+}
+
+.card-list .card-link .badge.headphone{
+    color: #B25A2B;
+    background: #FFE3D2;
+}
+
+.card-list .card-link .badge.lady{
+    color: #205C20;
+    background: #D6F8D6;
+}
+
+.card-list .card-link .badge.screen{
+    color: #856404;
+    background: #fff3cd;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color:#5372f0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    border: 2px solid #5372f0;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    background-color: #5372f0;
+    color: #fff;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+height: 13px;
+width: 13px;
+opacity: 0.5;
+background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: #5372f0;
+    margin-top: -35px;
+}
+
+.events{
+    height: fit-content;
+    width: 100%;
+    padding: 3vw;
+}
+
+.events-text{
+    width:100%;
+    height: 30%;
+}
+
+
+.events-text h1{
+font-size: 3rem;
+margin-bottom: 2rem;
+}
+
+.events-text p{
+    font-size: 1.2vmax;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.card-wrapper .swiper-slide-button{
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav-part2 h4 {
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+    }
+
+    .nav button {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+        padding: 4vw 6vw;
+        /* background-color: crimson; */
+    }
+
+    .right {
+        width: 100%;
+        height: 50%;
+        /* background-color: royalblue; */
+    }
+
+    .left h1 {
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    .left p {
+        font-size: 3vw;
+        width: 100%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+
+    .content button {
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+
+    .aboutUs {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 50%;
+    }
+
+    .aboutUS-part1 {
+        display: none;
+    }
+
+    .aboutUS-part2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutUS-part2 h1 {
+        font-size: 2.6rem;
+        font-weight: 800;
+    }
+
+    .aboutUS-part2 p {
+        font-size: 0.8rem;
+        width: 100%;
+        padding: 10px 20px 10px 0px;
+    }
+
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+
+
+
+}
