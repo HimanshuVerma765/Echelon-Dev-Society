@@ -63,7 +63,16 @@ body {
 }
 
 .nav h4 {
-    font-size: 1.2vw;
+    padding: 10px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+
+.nav h4:hover {
+    transition: ease-in-out 0.5s;
+    background: #538df075;
+    border-radius: 3px;
 }
 
 .nav i {
@@ -321,6 +330,69 @@ margin-bottom: 2rem;
     display: none;
 }
 
+/* Contact Section Styling */
+.contact-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-section p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
 @media (max-width:600px) {
     .nav-part2 h4 {
         display: none;
@@ -399,7 +471,5 @@ margin-bottom: 2rem;
     .card-wrapper{
         margin: 0 10px 25px;
     }
-
-
 
 }

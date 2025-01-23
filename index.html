@@ -15,12 +15,12 @@
         <div class="nav">
             <img src="assets/logo.png" alt="logo">
             <div class="nav-part2">
-                <h4>ABOUT US</h4>
+                <h4><a href="#about" style="color: black;  text-decoration: none;"> ABOUT US</a></h4>
                 <h4>TEAM</h4>
-               <a href="/component/slider/Event.html"> <h4>EVENTS</h4></a>
+               <a href="/component/slider/Event.html" style="color: black;  text-decoration: none;"> <h4>EVENTS</h4></a>
                 <h4>CONTACT US</h4>
                 <h4>FAQs</h4>
-                <button>Sign in</button>
+                <button >Sign in</button>
                 <i class="ri-menu-line"></i>
             </div>
         </div>
@@ -37,7 +37,7 @@
                 <img src="assets/hero.png" alt="">
             </div>
         </div>
-        <div class="aboutUs">
+        <div class="aboutUs" id="about">
             <div class="aboutUS-part1">
                 <img src="assets/about.png" alt="">
             </div>
@@ -62,7 +62,24 @@
                 </p>
             </div>
         </div>
-        <h1>Himanshu Verma</h1>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+          
+            <form class="contact-form">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Type your message" rows="5" required></textarea>
+          
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </section>
+          
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
