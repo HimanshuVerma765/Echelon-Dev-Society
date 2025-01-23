@@ -63,7 +63,16 @@ body {
 }
 
 .nav h4 {
-    font-size: 1.2vw;
+    padding: 10px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+
+.nav h4:hover {
+    transition: ease-in-out 0.5s;
+    background: #538df075;
+    border-radius: 3px;
 }
 
 .nav i {
